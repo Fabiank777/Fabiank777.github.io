@@ -16,6 +16,7 @@
         <a href="#ancla1">the strokes</a>
         <a href="#ancla2">radiohead</a>
         <a href="#ancla3">the smiths</a>
+        </ul>
     </nav>
 
         
@@ -63,7 +64,7 @@
 
 
 
-<section  id="the smiths-section" class="strokes-contenido">
+<section  id="smiths-section" class="strokes-contenido">
     <img src="imagenes/the smiths.jpg" id="TheStrokes">
 
     <div class="texto-strokes">
@@ -83,43 +84,37 @@
 </section>
 
 
-<script>
-    const fecha = new Date();
-    const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
-    document.getElementById('fecha-hoy').textContent = fecha.toLocaleDateString('es-ES', opciones);
-</script>
-
-
-
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
     const fondos = {
         "strokes-section": "url('imagenes/fondo.jpg')",
         "radiohead-section": "url('imagenes/fondo2.webp')",
-        "the smiths-section": "url('imagenes/fondo3.jpg')",
+        "smiths-section": "url('imagenes/fondo3.jpg')",
+    };
+const opcionesObserver = {
+        threshold: 0.1,
+        rootMargin: "-20% 0px -20% 0px"
     };
 
     const observer = new IntersectionObserver(
-        (entries) => {
+        entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     document.body.style.backgroundImage =
-                        `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), ${fondos[entry.target.id]}`;
+                      `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), ${fondos[entry.target.id]}`;
                 }
             });
         },
-        { threshold: 0.5 } 
     );
 
-    
-    document.querySelectorAll("section").forEach(section => {
-        if (fondos[section.id]) observer.observe(section);
+    document.querySelectorAll("section").forEach(sec => {
+        if (fondos[sec.id]) observer.observe(sec);
     });
 });
 </script>
     <footer>
-        <p>&copy; 2025 Carlos Fabian Saavedra  <span id="fecha-hoy"></span></p>
+        <p>&copy; 2025 Carlos Fabian Saavedra </span></p>
     </footer>
 </body>
 </html>

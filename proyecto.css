@@ -1,7 +1,7 @@
 header {
     background-color: #634343;
     color: white;
-    padding: 0px;
+    padding: 20px;
     text-align: center;
     width: 100%;
 }
@@ -46,7 +46,7 @@ h3 {
 
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0px;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -191,6 +191,7 @@ a {
         font-size: 1.5em;
     }
 }
+
 
 
 

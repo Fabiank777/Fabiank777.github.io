@@ -74,7 +74,15 @@ table p {
     line-height: 1;
     text-align: justify;
 }
-
+footer {
+    background-color: #634343;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 .strokes-contenido {
     display: flex;
     gap: 20px;
@@ -183,4 +191,3 @@ a {
         font-size: 1.5em;
     }
 }
-

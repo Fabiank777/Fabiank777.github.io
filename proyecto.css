@@ -114,19 +114,18 @@ a {
 @media (max-width: 768px) {
     nav {
          position: fixed;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        right: auto;
+        top: 0;
+        left: 0;         
+        right: 0;
+        transform: none; 
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         padding: 10px;
         gap: 10px;
-        border-radius: 10px;
     }
 
     nav img.logo {
-        width: 50px;
+        width: 40px;
     }
 
     .nav-links {
@@ -145,7 +144,7 @@ a {
 @media (max-width: 768px) {
 
     body {
-        margin-top: 70px
+       margin-top: 65px
     }
     nav a {
         font-size: 0.9em;
@@ -191,4 +190,5 @@ a {
         font-size: 1.5em;
     }
 }
+
 

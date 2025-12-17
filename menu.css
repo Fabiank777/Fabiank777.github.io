@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('imgelipse/fondom.jpg'); /* Cambia por tu ruta de imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Menú de navegación */
+nav.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav.menu .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav.menu .links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav.menu .links a:hover {
+    color: #ffd700;
+}
+
+nav.menu .usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav.menu .usuario a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav.menu .usuario a:hover {
+    color: #ff4d4d;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.contenedor-principal h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contenedor-principal p {
+    color: #111;
+    line-height: 1.6;
+}
+
+/* Imagen dentro del contenedor */
+.contenedor-principal img {
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}

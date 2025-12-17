@@ -1,0 +1,87 @@
+/* ====== GENERAL ====== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== MENÚ SIMPLE ====== */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ====== CONTENEDOR ====== */
+form {
+    width: 60%;
+    margin: 2.5rem auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.15);
+}
+
+/* ====== TÍTULO ====== */
+.titulo {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-shadow: 0.2rem 0.2rem 0.3rem gray;
+}
+
+/* ====== MENSAJE ====== */
+p {
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+
+/* ====== INPUTS ====== */
+input, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 1rem 0;
+    border: 0.08rem solid #ccc;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 8rem;
+    resize: vertical;
+}
+
+/* ====== BOTÓN ====== */
+button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+nav {
+    width: 100%;
+    background-color: #1f262c;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
